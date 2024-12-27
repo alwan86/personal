@@ -1,10 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+
   content: [
     './index.html',
     './*.html',
     '*.html',
+    "./node_modules/flowbite/**/*.js",
     'project.html'
+
   ],
   theme: {
     screens: {
@@ -20,5 +23,8 @@ module.exports = {
       // 'img-bg1': "url('aseet/bg/bg5.png')",
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ]
+
 }

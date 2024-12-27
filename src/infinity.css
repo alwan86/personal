@@ -1,0 +1,33 @@
+/* Container for the scroll */
+.infinity-scroll-container {
+  overflow: hidden; /* Hide the overflowing content */
+  position: relative;
+  width: 100%; /* Adjust as needed */
+ 
+  align-items: center;
+}
+
+/* The content that will scroll */
+.infinity-scroll-content {
+
+  animation: scroll 12s linear infinite; /* Adjust speed by changing 5s */
+}
+
+/* Individual scroll items */
+.scroll-item {
+  margin-right: 30px; /* Space between items */
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 10px 20px; /* Padding for items */
+}
+
+/* Animation: Start from center to left */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start at the middle */
+  }
+  100% {
+    transform: translateX(-100%); /* Move fully to the left */
+  }
+}
